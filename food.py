@@ -10,10 +10,11 @@ def get_food_response(image_path):
         ('image', ('image.jpg', open(image_path, 'rb'), 'image/jpeg'))
     ]
     headers = {
-        'Authorization': 'Bearer eda87bc113be66c5304bfb00a17e2f9862b3f02c'
+        'Authorization': 'Bearer 3156cee9ccada3bdcf0d2613ec567c5f5d7811ac'
     }
+    # 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
     # 3156cee9ccada3bdcf0d2613ec567c5f5d7811ac
-   
+#    eda87bc113be66c5304bfb00a17e2f9862b3f02c
 
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
@@ -50,8 +51,9 @@ def get_food_response(image_path):
     # print(dish)
     # print(result['segmentation_results'][0]['recognition_results'][0]['prob'])
 
-    openai.api_key = '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'
+    openai.api_key = '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'
     # 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
+    # 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
     messages = [{"role": "system", "content": "You are an intelligent assistant."}]
 
     message = f'Please write a recipe for {dish}'
