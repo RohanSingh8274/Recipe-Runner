@@ -14,7 +14,6 @@ def get_food_response(image_path):
     }
     # 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
     # 3156cee9ccada3bdcf0d2613ec567c5f5d7811ac
-#    eda87bc113be66c5304bfb00a17e2f9862b3f02c
 
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
